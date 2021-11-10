@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% block context %}
+
+
+
+<div class="mx-auto w-25">
+    <div class="jumbotron">
+        <h1>Chat Application</h1>
+        <p>Live chat runtime</p>
+    </div>
+    <div class="box border p-2">
+
+            <div class="form-group">
+                <label>Room Name</label>
+                <input class="form-control" id="room-id" name="room_name" placeholder="Room Name">
+            </div>
+            <div class="form-group">
+                <label>Username</label>
+                <input class="form-control" id="username-id" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="sendBtn-id" >Next</button>
+            </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    document.querySelector("#room-id").focus();
+    document.querySelector("#sendBtn-id").onclick =function(e){
+        const roomName =document.querySelector("#room-id").value;
+        const userName = document.querySelector("#username-id").value;
+
+        window.location.replace(roomName+"/?username=" + userName);
+    };
+</script>
+
+{% endblock %}

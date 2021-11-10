@@ -1,0 +1,8 @@
+Raj kushwaha's - 2021/11/09 Work Forecast:-
+1.Meeting with team .
+2.RND in django ORM.
+3.RND in Django Channels
+
+rajk8381
+Mypw@3210
+rajk.django@gmail.com
